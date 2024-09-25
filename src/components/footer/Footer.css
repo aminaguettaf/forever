@@ -1,0 +1,15 @@
+.footer img{
+    width: 150px;
+}
+.footer p, .footer li{
+    font-size: 14px;
+    color: var(--second-color);
+}
+.footer li, .footer h3{
+    text-transform: capitalize;
+}
+@media (max-width:996px){
+    .footer div:not(:last-of-type){
+        margin-bottom: 20px;
+    }
+}

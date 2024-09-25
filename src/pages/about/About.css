@@ -1,0 +1,32 @@
+.about .about-container .img{
+    flex: 1;
+}
+.about .about-container .img img{
+    width: 100%;
+}
+.about .about-container .text{
+    flex: 1;
+}
+.about .about-container .text p:not(:nth-of-type(3)){
+    font-size: 16px;
+    color: var(--second-color);
+}
+.about .choose-container .box{
+    border: 1px solid #eee;
+}
+.about .choose-container .box p{
+    font-size: 14px;
+}
+.about .choose-container .box p:nth-of-type(2){
+    color: var(--second-color);
+}
+@media (max-width:992px){
+    .about .about-container{
+        flex-direction: column;
+    }
+}
+@media (max-width:776px){
+    .about .choose-container{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,29 @@
+.item .img{
+    max-height: 250px;
+    overflow: hidden !important;
+}
+.item .img img{
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+.item:hover .img img{
+    transform: scale(1.1);
+}
+.item p{
+    font-size: 14px;
+    color: var(--first-color);
+}
+.item p.title{
+    width: 200px;
+}
+.item p.price{
+    font-weight: 500;
+}
+@media (max-width:996px){
+    .item .text{
+        text-align: center;
+    }
+    .item p.title{
+        width: 100%;
+    }
+}

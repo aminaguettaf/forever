@@ -1,0 +1,24 @@
+/* .title{
+    width: 380px;
+    margin: auto;
+} */
+.title h2{
+    text-transform: uppercase;
+    color: var(--first-color);
+}
+.title h2 span{
+    color: var(--second-color);
+}
+.title .line{
+    height: 3px;
+    width: 50px;
+    background-color: var(--first-color);
+}
+@media (max-width:560px){
+    .title h2{
+        font-size: 25px;
+    }
+    .title .line{
+        display: none;
+    }
+}

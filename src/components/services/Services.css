@@ -1,0 +1,18 @@
+.services .service i{
+    color: #000;
+    font-size: 40px;
+}
+.services .service p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--first-color);
+}
+.services .service p.desc{
+    color: var(--second-color);
+}
+@media (max-width:996px){
+    .services .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+}

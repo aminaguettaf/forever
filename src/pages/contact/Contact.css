@@ -1,0 +1,27 @@
+.contact .contact-container .img{
+    flex: 1;
+}
+.contact .contact-container .img img{
+    width: 100%;
+}
+.contact .contact-container .text{
+    flex: 1;
+}
+.contact .contact-container .text p{
+    font-size: 18px;
+    color: var(--second-color);
+}
+@media (max-width:996px){
+    .contact .contact-container{
+        flex-direction: column;
+        padding: 0 !important;
+    }
+    .contact .contact-container .text{
+        width: 100%;
+    }
+}
+@media (max-width:550px){
+    .contact .contact-container .text p{
+        font-size: 16px;
+    }
+}

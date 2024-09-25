@@ -1,0 +1,65 @@
+.collection .filters{
+    width: 250px;
+}
+.collection .filters .title{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+.collection .filters .title i{
+    color: var(--second-color);
+    transition: .3s;
+    display: none;
+}
+.collection .filters .box{
+    border: 1px solid #eee;
+}
+.collection .filters .box p:first-child{
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.collection .filters .box p{
+    font-size: 14px;
+    text-transform: capitalize;
+    color: var(--second-color);
+}
+.collection .collection-container{
+    flex: 1;
+}
+.collection .collection-container .header select{
+    font-size: 14px;
+    border: 2px solid var(--second-color);
+}
+.collection .collection-container .products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 20px;
+}
+@media (max-width:776px) {
+    .collection .container{
+        flex-direction: column;
+        gap: 10px !important;
+    }
+    .collection .filters{
+        width: 100%;
+    }
+    .collection .filters .title{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .collection .filters .title i{
+        display: block;
+    }
+    .collection .filters.show .title i{
+        transform: rotate(90deg);
+    }
+    .collection .filters .box{
+        display: none;
+    }
+    .collection .filters.show .box{
+        display: block;
+    }
+}
